@@ -1,0 +1,24 @@
+/*!
+ * Item: Flexi
+ * Description: Personal Portfolio HTML5 Template
+ * Author/Developer: Exill
+ * Author/Developer URL: https://themeforest.net/user/exill
+ * Version: v1.0.2
+ * License: Themeforest Standard Licenses: http://themeforest.net/licenses
+ */
+
+/*================================
+=            Triangle            =
+================================*/
+.header-area .triangle-shape {
+  position: absolute;
+  bottom: -2px;
+  fill: #fff;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .header-area .triangle-shape {
+    height: 10%;
+    width: 100%;
+  }
+}

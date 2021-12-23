@@ -1,0 +1,128 @@
+.contact-area {
+		background-color: #fff;
+		address, ul {
+			margin: 0;
+		}
+		.form-title, .info-title {
+			font-size: 22px;
+			font-weight: 700;
+		}
+		.contact-form {
+			.form-title {
+				margin-bottom: 25px;
+			}
+			.form-group {
+				margin-bottom: 25px;
+				&.custom-margin {
+					margin-bottom: 18px;
+				}
+					.form-control {
+					padding: 9px 14px;
+					height: 41px;
+					border: none;
+					border-bottom: 1px solid #ced4da;
+					font-size: 14px;
+					border-radius: 0;
+					&:focus {
+						box-shadow: none;
+						border-bottom: 1px solid #80bdff;
+					}
+			}
+					textarea.form-control {
+						height: auto;
+					}
+			}
+			.btn {
+				@include button();
+				transition: $transition-xv2;
+				padding: 8px 20px;
+				&.wait {
+					background-color: #222!important;
+					border-color: #222!important;
+				}
+				&.success {
+					background-color: #28a745!important;
+					border-color: #28a745!important;
+				}
+				&.error {
+					background-color: #dc3545!important;
+					border-color: #dc3545!important;
+				}
+			}
+			.feedback-error {
+				color: #dc3545;
+				margin: 0;
+				margin-top: 8px;
+				display: none;
+			}
+		}
+
+		.contact-info {
+			padding-left: 13px;
+			.info-title {
+				margin-bottom: 16px;
+			}
+			.info-description {
+				font-size: 14px;
+				margin-bottom: 28px;
+			}
+			li {
+				&:first-child {
+					.info-icon {
+						margin-bottom: 13px;
+					}
+					.media-body {
+						padding-top: 0;
+					}
+				}
+				&:last-child {
+					.info-icon {
+						margin-top: 13px;
+					}
+					.media-body {
+						padding-bottom: 0;
+					}
+				}
+			}
+			.media {
+				.info-icon {
+					margin-right: 48px;
+					position: relative;
+					font-size: 34px;
+					.icon {
+						position: absolute;
+						line-height: 100%;
+						left: 0;
+						top: 50%;
+						transform: translate(0, -50%);
+						color: #222;
+					}
+				}
+				.media-body {
+					border-left: 2px solid rgba(214, 214, 214, 0.5);
+					padding: 13px 0 13px 20px;
+					.info-type {
+						font-weight: 600;
+						margin-bottom: 0;
+						font-size: 14px;
+					}
+					.info-details {
+						a {
+							@include anchor-black();
+						}
+					}
+				}
+			}
+		}
+}
+
+@include media-breakpoint-down(md) {
+	.contact-area {
+		.contact-form {
+			margin-bottom: 45px;
+		}
+		.contact-info {
+			padding-left: 0;
+		}
+	}
+}

@@ -1,0 +1,272 @@
+/*!
+ * Item: Flexi
+ * Description: Personal Portfolio HTML5 Template
+ * Author/Developer: Exill
+ * Author/Developer URL: https://themeforest.net/user/exill
+ * Version: v1.0.2
+ * License: Themeforest Standard Licenses: http://themeforest.net/licenses
+ */
+
+/*=========================================
+=            Table of Contents            =
+=========================================*/
+/**
+ * Global Styles
+ * Bootstrap Reset
+ * Navbar Area
+ * Services Area
+ * Portfolio Area
+ * Testimonials Area
+ * Blog Area
+ * Contact Area
+ */
+/*=====  End of Table of Contents  ======*/
+/*=======================================
+=            Bootstrap Reset            =
+=======================================*/
+.table-custom,
+.table-custom > th,
+.table-custom > td {
+  background-color: white;
+}
+
+.table-hover .table-custom:hover {
+  background-color: #fdf6f7;
+}
+
+.table-hover .table-custom:hover > td,
+.table-hover .table-custom:hover > th {
+  background-color: #fdf6f7;
+}
+
+.btn-custom {
+  color: #E16F7C;
+  background-color: #E16F7C;
+  border-color: #E16F7C;
+}
+
+.btn-custom:hover {
+  color: #E16F7C;
+  background-color: #db5161;
+  border-color: #d84556;
+}
+
+.btn-custom:focus, .btn-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 111, 124, 0.5);
+}
+
+.btn-custom.disabled, .btn-custom:disabled {
+  color: #E16F7C;
+  background-color: #E16F7C;
+  border-color: #E16F7C;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+.show > .btn-custom.dropdown-toggle {
+  color: #E16F7C;
+  background-color: #d84556;
+  border-color: #d63c4e;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 111, 124, 0.5);
+}
+
+.btn-outline-custom {
+  color: #E16F7C;
+  background-color: transparent;
+  background-image: none;
+  border-color: #E16F7C;
+}
+
+.btn-outline-custom:hover {
+  color: #E16F7C;
+  background-color: #E16F7C;
+  border-color: #E16F7C;
+}
+
+.btn-outline-custom:focus, .btn-outline-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 111, 124, 0.5);
+}
+
+.btn-outline-custom.disabled, .btn-outline-custom:disabled {
+  color: #E16F7C;
+  background-color: transparent;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active, .btn-outline-custom:not(:disabled):not(.disabled).active,
+.show > .btn-outline-custom.dropdown-toggle {
+  color: #E16F7C;
+  background-color: #E16F7C;
+  border-color: #E16F7C;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus, .btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 111, 124, 0.5);
+}
+
+.badge-custom {
+  color: #E16F7C;
+  background-color: #E16F7C;
+}
+
+.badge-custom[href]:hover, .badge-custom[href]:focus {
+  color: #E16F7C;
+  text-decoration: none;
+  background-color: #d84556;
+}
+
+.alert-custom {
+  color: #b52636;
+  background-color: white;
+  border-color: white;
+}
+
+.alert-custom hr {
+  border-top-color: #fdf6f7;
+}
+
+.alert-custom .alert-link {
+  color: #8b1d29;
+}
+
+.list-group-item-custom {
+  color: #b52636;
+  background-color: white;
+}
+
+.list-group-item-custom.list-group-item-action:hover, .list-group-item-custom.list-group-item-action:focus {
+  color: #b52636;
+  background-color: #fdf6f7;
+}
+
+.list-group-item-custom.list-group-item-action.active {
+  color: #E16F7C;
+  background-color: #b52636;
+  border-color: #b52636;
+}
+
+.bg-custom {
+  background-color: #E16F7C !important;
+}
+
+a.bg-custom:hover, a.bg-custom:focus,
+button.bg-custom:hover,
+button.bg-custom:focus {
+  background-color: #d84556 !important;
+}
+
+.border-custom {
+  border-color: #E16F7C !important;
+}
+
+.text-custom {
+  color: #E16F7C !important;
+}
+
+a.text-custom:hover, a.text-custom:focus {
+  color: #d84556 !important;
+}
+
+/*===============================
+=            Globals            =
+===============================*/
+::-moz-selection {
+  color: #fff;
+  background-color: #E16F7C;
+}
+::selection {
+  color: #fff;
+  background-color: #E16F7C;
+}
+
+a {
+  color: #E16F7C;
+}
+
+a:hover {
+  color: #d43042;
+}
+
+.btn.button-scheme {
+  background-color: #E16F7C !important;
+  border: 1px solid #E16F7C !important;
+}
+
+.btn.button-scheme:focus {
+  box-shadow: none !important;
+  border-color: #d43042 !important;
+  background-color: #d43042 !important;
+}
+
+.btn.button-outline {
+  background-color: transparent !important;
+  border: 1px solid #E16F7C !important;
+  color: #222 !important;
+}
+
+.btn.button-outline:focus {
+  box-shadow: none !important;
+  border-color: #d43042 !important;
+  background-color: rgba(34, 34, 34, 0.05) !important;
+}
+
+/*===================================
+=            Navbar Area            =
+===================================*/
+.navbar.scrolled.navbar-dark .navbar-nav .show > .nav-link, .navbar.scrolled.navbar-dark .navbar-nav .active > .nav-link, .navbar.scrolled.navbar-dark .navbar-nav .nav-link.show, .navbar.scrolled.navbar-dark .navbar-nav .nav-link.active {
+  color: #E16F7C;
+}
+
+.navbar.scrolled .hamburger-inner, .navbar.scrolled .hamburger-inner::before, .navbar.scrolled .hamburger-inner::after {
+  background-color: #E16F7C;
+}
+
+/*=====================================
+=            Services Area            =
+=====================================*/
+.services-area .single-service .icon {
+  color: #E16F7C;
+}
+
+/*======================================
+=            Portfolio Area            =
+======================================*/
+.portfolio-area .filter-control li:hover, .portfolio-area .filter-control li.tab-active {
+  color: #eeaeb6;
+}
+
+.portfolio-area .filter-control li:hover:before, .portfolio-area .filter-control li.tab-active:before {
+  background-color: #eeaeb6;
+}
+
+/*=========================================
+=            Testimonials Area            =
+=========================================*/
+.testimonials-area .single-review .quote-icon {
+  color: #E16F7C;
+}
+
+/*=================================
+=            Blog Area            =
+=================================*/
+.blog-area .card .card-body .post-summary .author-name {
+  color: #E16F7C;
+}
+
+.blog-area .card .card-body .post-summary .author-name:hover, .blog-area .card .card-body .post-summary .author-name:focus {
+  color: #d43042;
+}
+
+/*====================================
+=            Contact Area            =
+====================================*/
+.contact-area .contact-form .form-group .form-control:focus {
+  border-bottom: 1px solid #80bdff;
+}
+
+.contact-area .contact-info .media .info-icon .icon {
+  color: #E16F7C;
+}

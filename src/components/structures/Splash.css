@@ -1,0 +1,18 @@
+.gistoneer-splash-logo{
+    margin-top: 20px;
+    /*color: rgb(0, 179, 173) !important;*/
+}
+.gistoneer-splash {
+    width: 100%;
+}
+.gistoneer-splash .gistoneer-splash-content {
+    padding-top: 10em;
+    text-align: center;
+}
+.gistoneer-splash-icon-size {
+    max-width: 100%;
+}
+.gistoneer-splash-loader {
+    padding: 10px 0;
+    border-radius: 50%;
+}

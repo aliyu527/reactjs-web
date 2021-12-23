@@ -1,0 +1,128 @@
+.portfolio-area {
+	.filter-control {
+		margin-bottom: 20px;
+		li {
+			font-weight: 500;
+			font-size: 14px;
+			cursor: pointer;
+			border-bottom: 1px solid transparent;
+			transition: all .10s ease-in-out;
+			position: relative;
+			letter-spacing: 0.3px;
+			&:not(:last-child) {
+				margin-right: 25px;
+			}
+			&:hover, &.tab-active {
+				color: lighten(#222, 15%);
+				&:before {
+					content: "";
+					background-color: lighten(#222, 15%);
+					height: 1px;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+	}
+	.shufflejs {
+		.js-item {
+			margin-bottom: 30px;
+			.item-overlay {
+				position: relative;
+				overflow: hidden;
+				.overlay-content {
+					position: absolute;
+					width: 100%;
+					padding: 3px 18px;
+					color: #fff;
+					.overlay-title {
+						font-size: 15px;
+						font-weight: 600;
+						margin-bottom: 0;
+						float: left;
+					line-height: 40px;
+					}
+					.overlay-icons {
+						float: right;
+						a {
+							outline: none;
+							text-decoration: none;
+							margin: 0 6px;
+						}
+						.icon {
+							line-height: 40px;
+							font-size: 24px;
+							color: #fff;
+							display: inline-block;
+						}
+					}
+				}
+
+				&:before {
+					content: '';
+					width: 100%;
+					height: 100%;
+					background: #000;
+					background: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 75%);
+					opacity: 0;
+					position: absolute;
+					transition: all 0.3s ease-in-out;
+					bottom: 0;
+					z-index: 1;
+				}
+				.overlay-content {
+					transition: all 0.3s ease-in-out;
+					visibility: hidden;
+					bottom: 0;
+					z-index: 2;
+					opacity: 0;
+				}
+				img {
+					transform: scale(1);
+				}
+
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+					.overlay-content {
+					visibility: visible;
+					opacity: 1;
+					}
+			}
+			}
+
+				
+		}
+	}
+}
+.lity {
+	transition: opacity 0.15s ease;
+}
+
+.lity-loader {
+	transition: opacity 0.15s ease;
+}
+
+.lity-content {
+	transition: transform 0.15s ease;
+}
+
+@include media-breakpoint-down(xs) {
+	.portfolio-area .shufflejs .js-item .item-overlay {
+				.overlay-content {
+					.overlay-title {
+						display: none;
+					}
+					.overlay-icons {
+						text-align: center;
+						float: none;
+						.icon {
+							font-size: 21px;
+							line-height: 100%;
+						}
+					}
+				}
+			}
+}

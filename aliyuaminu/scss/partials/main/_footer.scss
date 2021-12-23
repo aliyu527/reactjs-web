@@ -1,0 +1,129 @@
+.footer-area {
+	background-color: #222;
+	text-align: center;
+	padding: 65px 0 0 0;
+	.main-footer {
+		text-align: left;
+		padding-bottom: 64px;
+		border-bottom: 2px solid rgba(#555, 0.15);
+		li {
+			margin: 3px 0;
+		}
+		.column-title {
+			color: #fff;
+			font-size: 15px;
+			margin-bottom: 14px;
+		}
+		.column-content a {
+			color: #9e9e9e;
+			font-size: 14px;
+			font-weight: 500;
+			font-family: $font-2;
+			&:hover, &:focus {
+				color: lighten(#9e9e9e, 25%);
+			}
+		}
+		.brand-logo {
+			color: #fff;
+			margin-bottom: 12px;
+	        font-family: $font-3;
+	        font-weight: bold;
+	        font-size: 42px;
+	        letter-spacing: 0.7px;
+	        line-height: 100%;
+		}
+		.brand-description {
+			color: #ccc;
+			font-size: 13px;
+		}
+	}
+
+	.mini-footer {
+		padding: 15px 0;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		.social-medias {
+		a {
+			height: 26px;
+			width: 26px;
+			display: inline-block;
+			background-color: #222;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 14px;
+			line-height: 27px;
+			margin: 0 3px;
+			transition: $transition-xv2;
+			&.twitter {
+					background-color: #1DA1F2;
+					&:focus, &:hover {
+						background-color: darken(#1DA1F2, 8%);
+					}
+			}
+			&.instagram {
+					background-color: #C32361;
+					&:focus, &:hover {
+						background-color: darken(#C32361, 8%);
+					}
+			}
+			&.linkedin {
+					background-color: #0077B5;
+					&:focus, &:hover {
+						background-color: darken(#0077B5, 8%);
+					}
+			}
+			&.youtube {
+					background-color: #c33a38;
+					&:focus, &:hover {
+						background-color: darken(#c33a38, 8%);
+					}
+			}
+			&.github {
+					background-color: #6e5494;
+					&:focus, &:hover {
+						background-color: darken(#6e5494, 8%);
+					}
+			}
+			&.facebook {
+					background-color: #3B5998;
+					&:focus, &:hover {
+						background-color: darken(#3B5998, 8%);
+					}
+			}
+			&.dribbble {
+					background-color: #C32361;
+					&:focus, &:hover {
+						background-color: darken(#C32361, 8%);
+					}
+			}
+		}
+	}
+	.copyright-notice {
+		color: #fff;
+		margin-bottom: 0;
+	}
+	
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.footer-area {
+		.main-footer {
+			text-align: center;
+			padding-bottom: 15px;
+			.column-content {
+				margin-bottom: 30px;
+			}
+		}
+		.mini-footer {
+			padding: 25px 0;
+			justify-content: center;
+			.social-medias {
+				margin-bottom: 13px;
+			}
+			.copyright-notice {
+				font-size: 13px;
+			}
+		}
+	}
+}

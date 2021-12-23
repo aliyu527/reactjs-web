@@ -1,0 +1,20 @@
+.contact-area {
+		.contact-form {
+			.form-group {
+					.form-control {
+					&:focus {
+						border-bottom: 1px solid lighten(#007bff, 25%)
+					}
+			}
+			}
+		}
+		.contact-info {
+			.media {
+				.info-icon {
+					.icon {
+						color: $color-scheme;
+					}
+				}
+			}
+		}
+}

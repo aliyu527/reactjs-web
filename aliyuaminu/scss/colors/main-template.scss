@@ -1,0 +1,47 @@
+/*=========================================
+=            Table of Contents            =
+=========================================*/
+/**
+ * Global Styles
+ * Bootstrap Reset
+ * Navbar Area
+ * Services Area
+ * Portfolio Area
+ * Testimonials Area
+ * Blog Area
+ * Contact Area
+ */
+/*=====  End of Table of Contents  ======*/
+
+/*=======================================
+=            Bootstrap Reset            =
+=======================================*/
+@import 'partials/bootstrap-template';
+/*===============================
+=            Globals            =
+===============================*/
+@import 'partials/main/globals';
+/*===================================
+=            Navbar Area            =
+===================================*/
+@import 'partials/main/navbar';
+/*=====================================
+=            Services Area            =
+=====================================*/
+@import 'partials/main/services';
+/*======================================
+=            Portfolio Area            =
+======================================*/
+@import 'partials/main/portfolio';
+/*=========================================
+=            Testimonials Area            =
+=========================================*/
+@import 'partials/main/testimonials';
+/*=================================
+=            Blog Area            =
+=================================*/
+@import 'partials/main/blog';
+/*====================================
+=            Contact Area            =
+====================================*/
+@import 'partials/main/contact';

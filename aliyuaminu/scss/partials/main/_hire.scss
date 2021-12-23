@@ -1,0 +1,22 @@
+.hire-area {
+	background-image: url(../img/hire-area.jpg);
+	padding: 85px 0;
+	&:before {
+		background-color: rgba(#000, .68);
+	}
+	.hire-title {
+		color: #fff;
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 11px;
+	}
+	.hire-description {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 28px;
+	}
+	.hire {
+		@include radius-button();
+	}
+}

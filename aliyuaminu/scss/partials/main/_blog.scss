@@ -1,0 +1,61 @@
+.blog-area {
+	a:hover {
+		text-decoration: none;
+	}
+	.card {
+		&>a {
+			height: 100%;
+		}
+		border: none;
+		.card-body {
+			padding: 15px 0 0 0;
+		.card-title {
+			font-weight: 600;
+			font-size: 18px;
+			margin-bottom: 9px;
+			letter-spacing: 0.3px;
+			font-family: $font-1;
+			@include anchor-black();
+			color: #333;
+		}
+		.card-text {
+			font-size: 13px;
+			line-height: 1.7;
+			margin-bottom: 18px;
+			font-family: $font-2;
+			font-weight: 500;
+			color: #777;
+		}
+		.post-summary {
+			.author-avatar {
+				width: 36px;
+				margin-right: 10px;
+				box-shadow: 0 0 7px 0 rgba(#000,.33);
+			}
+			.author-name {
+				margin-bottom: 0;
+				font-size: 13px;
+				font-weight: 400;
+				font-family: $font-1;
+				@include anchor-black();
+			}
+			.post-date {
+				font-size: 12px;
+			}
+		}
+	}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.blog-area {
+		.card {
+			margin-bottom: 40px;
+			.card-body {
+				.card-title{
+				font-size: 20px;
+				}
+			}
+		}
+	}
+}

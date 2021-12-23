@@ -1,0 +1,18 @@
+.cover-loading {
+    padding: 70px 20px;
+    width: 100%;
+    text-align: center;
+}
+.cover-loading img {
+    width: 150px;
+}
+.author-thumb {
+    position: relative;
+}
+.author-thumb img.avatar-loading {
+    position: absolute;
+    top: 38%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

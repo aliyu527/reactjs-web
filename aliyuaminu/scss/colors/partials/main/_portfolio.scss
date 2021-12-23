@@ -1,0 +1,12 @@
+.portfolio-area {
+	.filter-control {
+		li {
+			&:hover, &.tab-active {
+				color: lighten($color-scheme, 15%);
+				&:before {
+					background-color: lighten($color-scheme, 15%);
+				}
+			}
+		}
+	}
+}

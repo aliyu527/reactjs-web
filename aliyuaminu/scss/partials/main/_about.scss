@@ -1,0 +1,78 @@
+.about-area {
+	.about-img {
+		width: 430px;
+	}
+	.about-title {
+		font-weight: 800;
+		margin-bottom: 12px;
+		font-size: 33px;
+		font-family: $font-2;
+	}
+	.about-role {
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: 25px;
+		font-family: $font-2;
+	}
+	.about-description.last {
+		padding-bottom: 33px;
+		border-bottom: 1px solid #f0f0f0;
+		margin-bottom: 0;
+	}
+	.about-info {
+		margin-bottom: 0;
+		padding: 33px 0;
+		li {
+			width: 49.6%;
+			margin-bottom: 10px;
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+			span {
+				font-family: $font-2;
+				font-weight: 600;
+				margin-right: 10px;
+			}
+			p {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.btn {
+		@include button();
+		margin-right: 9px;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.about-area {
+		.about-info {
+			padding: 33px 0 23px 0;
+			li {
+				width: auto;
+				display: block;
+				margin-bottom: 10px!important;
+			}
+		}
+		.btn {
+			margin-bottom: 9px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.about-area {
+		.content-block {
+			padding-left: 0;
+		}
+		.about-img {
+			display: block;
+			margin: 0 auto 35px auto;
+			width: 65%;
+		}
+		.about-title {
+			font-size: 26px;
+		}
+	}
+}

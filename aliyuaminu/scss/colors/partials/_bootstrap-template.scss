@@ -1,0 +1,145 @@
+.table-custom,
+.table-custom > th,
+.table-custom > td {
+  background-color: lighten($color-scheme, 37%);
+}
+
+.table-hover .table-custom:hover {
+  background-color: lighten($color-scheme, 32%);
+}
+
+.table-hover .table-custom:hover > td,
+.table-hover .table-custom:hover > th {
+  background-color: lighten($color-scheme, 32%);
+}
+
+.btn-custom {
+  color: $color-scheme;
+  background-color: $color-scheme;
+  border-color: $color-scheme;
+}
+
+.btn-custom:hover {
+  color: $color-scheme;
+  background-color: darken($color-scheme, 07%);
+  border-color: darken($color-scheme, 10%);
+}
+
+.btn-custom:focus, .btn-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba($color-scheme, 0.5);
+}
+
+.btn-custom.disabled, .btn-custom:disabled {
+  color: $color-scheme;
+  background-color: $color-scheme;
+  border-color: $color-scheme;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+.show > .btn-custom.dropdown-toggle {
+  color: $color-scheme;
+  background-color: darken($color-scheme, 10%);
+  border-color: darken($color-scheme, 12%);
+}
+
+.btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($color-scheme, 0.5);
+}
+
+.btn-outline-custom {
+  color: $color-scheme;
+  background-color: transparent;
+  background-image: none;
+  border-color: $color-scheme;
+}
+
+.btn-outline-custom:hover {
+  color: $color-scheme;
+  background-color: $color-scheme;
+  border-color: $color-scheme;
+}
+
+.btn-outline-custom:focus, .btn-outline-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba($color-scheme, 0.5);
+}
+
+.btn-outline-custom.disabled, .btn-outline-custom:disabled {
+  color: $color-scheme;
+  background-color: transparent;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active, .btn-outline-custom:not(:disabled):not(.disabled).active,
+.show > .btn-outline-custom.dropdown-toggle {
+  color: $color-scheme;
+  background-color: $color-scheme;
+  border-color: $color-scheme;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus, .btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($color-scheme, 0.5);
+}
+
+.badge-custom {
+  color: $color-scheme;
+  background-color: $color-scheme;
+}
+
+.badge-custom[href]:hover, .badge-custom[href]:focus {
+  color: $color-scheme;
+  text-decoration: none;
+  background-color: darken($color-scheme, 10%);
+}
+
+.alert-custom {
+  color: darken($color-scheme, 23%);
+  background-color: lighten($color-scheme, 41%);
+  border-color: lighten($color-scheme, 37%);
+}
+
+.alert-custom hr {
+  border-top-color: lighten($color-scheme, 32%);
+}
+
+.alert-custom .alert-link {
+  color: darken($color-scheme, 33%);
+}
+
+.list-group-item-custom {
+  color: darken($color-scheme, 23%);
+  background-color: lighten($color-scheme, 37%);
+}
+
+.list-group-item-custom.list-group-item-action:hover, .list-group-item-custom.list-group-item-action:focus {
+  color: darken($color-scheme, 23%);
+  background-color: lighten($color-scheme, 32%);
+}
+
+.list-group-item-custom.list-group-item-action.active {
+  color: $color-scheme;
+  background-color: darken($color-scheme, 23%);
+  border-color: darken($color-scheme, 23%);
+}
+
+.bg-custom {
+  background-color: $color-scheme !important;
+}
+
+a.bg-custom:hover, a.bg-custom:focus,
+button.bg-custom:hover,
+button.bg-custom:focus {
+  background-color: darken($color-scheme, 10%) !important;
+}
+
+.border-custom {
+  border-color: $color-scheme !important;
+}
+
+.text-custom {
+  color: $color-scheme !important;
+}
+
+a.text-custom:hover, a.text-custom:focus {
+  color: darken($color-scheme, 10%) !important;
+}

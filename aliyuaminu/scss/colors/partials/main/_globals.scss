@@ -1,0 +1,33 @@
+::selection {
+    color: #fff;
+    background-color: $color-scheme;
+}
+
+a {
+	color: $color-scheme;
+	&:hover {
+		color: darken($color-scheme, 15%);
+	}
+}
+
+.btn {
+	&.button-scheme {
+		background-color: $color-scheme!important;
+		  border: 1px solid $color-scheme!important;
+		  &:focus {
+		      box-shadow: none!important;
+		      border-color: darken($color-scheme, 15%)!important;
+		      background-color: darken($color-scheme, 15%)!important;
+		  }
+	}
+	&.button-outline {
+		  background-color: transparent!important;
+		  border: 1px solid $color-scheme!important;
+		  color: #222!important;
+		  &:focus {
+		      box-shadow: none!important;
+		      border-color: darken($color-scheme, 15%)!important;
+		      background-color: rgba(#222, 0.05)!important;
+		  }
+}
+}

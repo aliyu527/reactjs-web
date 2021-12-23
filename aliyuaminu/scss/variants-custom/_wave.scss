@@ -1,0 +1,21 @@
+/*============================
+=            Wave            =
+============================*/
+
+.header-area {
+	.wave-shape {
+		position: absolute;
+		bottom: -2px;
+		fill: #fff;
+	}
+}
+
+// Hack for IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   .header-area {
+	.wave-shape {
+		height: 10%;
+		width: 100%;
+   	}
+   }
+}

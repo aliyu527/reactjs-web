@@ -1,0 +1,30 @@
+// Settings
+// ==================================================
+$hamburger-padding-x                       : 0;
+$hamburger-padding-y                       : 0;
+$hamburger-layer-width                     : 22px;
+$hamburger-layer-height                    : 2px;
+$hamburger-layer-spacing                   : 4px;
+$hamburger-layer-color                     : #fff;
+$hamburger-layer-border-radius             : 4px;
+$hamburger-hover-opacity                   : 0.7;
+$hamburger-hover-transition-duration       : 0.15s;
+$hamburger-hover-transition-timing-function: linear;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter    : opacity(50%);
+
+// Types (Remove or comment out what you don’t need)
+// ==================================================
+$hamburger-types: (
+  slider,
+  slider-r
+);
+
+// Imports the original file to override
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+

@@ -1,0 +1,9 @@
+node_modules
+build
+yarn-error
+.DS_Store
+
+^node_modules
+^build
+^yarn-error
+^.DS_Store

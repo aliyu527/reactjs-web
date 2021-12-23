@@ -1,0 +1,12 @@
+.story-loading {
+    text-align: center;
+}
+.story-loading img {
+    width: 100px;
+}
+.gallery-photo {
+    text-align: center;
+}
+.gallery-photo img#loader {
+    width: 30px;
+}

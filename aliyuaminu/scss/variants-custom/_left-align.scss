@@ -1,0 +1,61 @@
+/*==================================
+=            Left Align            =
+==================================*/
+
+@import '../partials/init';
+
+.header-area {
+	.greet {
+		margin-bottom: 20px;
+	}
+	.skills {
+		margin-bottom: 22px;
+	}
+	.description {
+		margin-bottom: 22px;
+	}
+	.btn {
+		margin: 0 9px 0 0;
+	}
+}
+
+
+
+
+
+@include media-breakpoint-down(xs) {
+	.header-area {
+		.skills {
+			font-size: 40px;
+		}
+		.btn {
+			margin: 0 9px 12px 0;
+		}
+	}
+}
+
+
+@include media-breakpoint-down(lg) {
+	.header-area {
+		.greet {
+		margin-bottom: 18px;
+	}
+	.skills {
+		margin-bottom: 20px;
+		font-size: 44px;
+	}
+	.description {
+		margin-bottom: 20px;
+	}
+	}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 375px) {
+	.header-area {
+		.skills {
+			font-size: 32px;
+		}
+	}
+}

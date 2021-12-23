@@ -1,0 +1,58 @@
+.testimonials-area {
+	background-image: url(../img/hire-area.jpg);
+	padding: 85px 0;
+	&:before {
+		background-color: rgba(#000, .73);
+	}
+	.single-review {
+		a:hover {
+			text-decoration: none;
+		}
+		.quote-icon {
+			font-size: 66px;
+			color: #666;
+			display: inline-block;
+			margin-bottom: 25px;
+			line-height: 100%;
+		}
+		.client-review {
+			margin-bottom: 31px;
+			font-weight: 400;
+			color: #fff;
+			font-size: 16px;
+		}
+		.client-details {
+			text-align: left;
+			margin-bottom: 30px;
+			.client-avatar {
+			width: 47px;
+			margin-right: 10px;
+			font-family: $font-1;
+			font-weight: 600;
+			box-shadow: 0 0 7px 0 rgba(#000,.33);
+			}
+			.client-name {
+				margin-bottom: 0;
+				font-weight: 700;
+				font-size: 14px;
+				color: #f3f3f3;
+			}
+			.client-role {
+				display: inline-block;
+				font-size: 12px;
+				color: #ccc;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.testimonials-area {
+		.single-review {
+			.client-review {
+				font-size: 14px;
+			}
+		}
+	}
+}

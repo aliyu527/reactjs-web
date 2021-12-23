@@ -1,0 +1,8 @@
+.cover-loading {
+    margin: 25px 5px 25px 5px;
+    width: 70px !important;
+}
+.author-thumb img.avatar-loading {
+    border-radius: 50%;
+    width: 60px
+}

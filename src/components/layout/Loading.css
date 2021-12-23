@@ -1,0 +1,11 @@
+.gistoneer-splash {
+    width: 100%;
+}
+.gistoneer-splash .gistoneer-splash-content {
+    padding-top: 7em;
+    text-align: center;
+}
+.gistoneer-splash-loader {
+    padding: 10px 0;
+    border-radius: 50%;
+}

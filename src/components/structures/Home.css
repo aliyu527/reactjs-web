@@ -1,0 +1,17 @@
+.gistoneer-landing-logo{
+    margin-top: 20px;
+}
+.gistoneer-landing {
+    width: 100%;
+}
+.gistoneer-landing .gistoneer-landing-content {
+    padding-top: 10em;
+    text-align: center;
+}
+.gistoneer-landing-icon-size {
+    max-width: 100%;
+}
+.gistoneer-landing-loader {
+    padding: 10px 0;
+    border-radius: 50%;
+}

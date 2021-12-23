@@ -1,0 +1,12 @@
+.navbar {
+	&.scrolled {
+        &.navbar-dark .navbar-nav {
+        	.show>.nav-link, .active>.nav-link, .nav-link.show, .nav-link.active {
+            color: $color-scheme;
+        	}
+        }
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            background-color: $color-scheme;
+        }
+	}
+}

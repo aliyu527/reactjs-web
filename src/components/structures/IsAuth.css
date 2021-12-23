@@ -1,0 +1,14 @@
+.general-loading {
+    text-align: center;
+    padding: 20px 5px;
+}
+.general-loading img {
+    width: 100px;
+}
+.inner-loader {
+    width: 80px;
+    padding: 10px 0;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

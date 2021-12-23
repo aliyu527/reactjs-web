@@ -1,0 +1,7 @@
+.album-loading {
+    padding: 55px 5px 55px 5px;
+    text-align: center;
+}
+.album-loading img {
+    width: 70px !important;
+}
